@@ -4,21 +4,32 @@ import HeroInfo from "@/components/HeroInfo/HeroInfo";
 import ServiceSection from "@/components/ServiceSection/ServiceSection";
 import ProjectSection from "@/components/Project/ProjectSection";
 import Link from "next/link";
+import * as motion from "motion/react-client";
 
 export default function Home() {
   return (
     <>
       {/* Title */}
-      <div className="py-20">
+      <motion.div
+        className="py-20"
+        initial={{ opacity: 0, y: 50, scale: 0.8 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+      >
         <h1 className="sm:text-6xl/tight text-5xl/tight sm:text-center text-left">
           Tingkatkan Gaya Hidup Anda <br /> Bersama Kami
         </h1>
-      </div>
+      </motion.div>
       {/* End Title */}
 
       {/* Hero Image */}
       <div className="max-w-5xl mx-auto relative">
-        <Image src={DataImage.Hero} alt="Hero Image" priority />
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          transition={{ delay: 0.5 }}
+          animate={{ opacity: 1, y: 0 }}
+        >
+          <Image src={DataImage.Hero} alt="Hero Image" priority />
+        </motion.div>
         <HeroInfo />
       </div>
       {/* End Hero Image */}
@@ -34,12 +45,23 @@ export default function Home() {
 
       {/* Proyek */}
       <div className="mt-32" id="proyek">
-        <h1 className="text-4xl/normal text-center font-semibold">
+        <motion.h1
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-4xl/normal text-center font-semibold"
+        >
           Proyek Kami
-        </h1>
-        <p className="text-base/loose text-center">
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          transition={{ delay: 0.2 }}
+          viewport={{ once: true }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="text-base/loose text-center"
+        >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, non?
-        </p>
+        </motion.p>
 
         <ProjectSection />
       </div>
