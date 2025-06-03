@@ -24,13 +24,16 @@ export default function Home() {
       {/* End Hero Image */}
 
       {/* Layanan */}
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-32 gap-10">
+      <div
+        className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-32 gap-10"
+        id="layanan"
+      >
         <ServiceSection />
       </div>
       {/* End Layanan */}
 
       {/* Proyek */}
-      <div className="mt-32">
+      <div className="mt-32" id="proyek">
         <h1 className="text-4xl/normal text-center font-semibold">
           Proyek Kami
         </h1>
@@ -43,12 +46,15 @@ export default function Home() {
       {/* End Proyek */}
 
       {/* Contact */}
-      <div className="mt-32 flex md:flex-row flex-col items-center justify-between md:gap-0 gap-4">
+      <div
+        className="mt-32 flex md:flex-row flex-col items-center justify-between md:gap-0 gap-4"
+        id="kontak"
+      >
         <h2 className="text-3xl font-bold">Ngoding.</h2>
         <div className="flex gap-10">
-          <Link href={"#"}>Beranda</Link>
-          <Link href={"#"}>Layanan</Link>
-          <Link href={"#"}>Proyek</Link>
+          <Link href={"#beranda"}>Beranda</Link>
+          <Link href={"#layanan"}>Layanan</Link>
+          <Link href={"#proyek"}>Proyek</Link>
         </div>
         <div className="flex gap-4">
           <Link href={"#"}>

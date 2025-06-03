@@ -25,8 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${fontPoppins.className} antialiased`}>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${fontPoppins.className} antialiased`} id="beranda">
         <Navbar />
         <div className="container mx-auto px-4">{children}</div>
         <Footer />
