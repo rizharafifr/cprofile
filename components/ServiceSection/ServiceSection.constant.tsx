@@ -7,13 +7,13 @@ const SERVICE_ITEMS = [
   },
   {
     iClass: "ri-service-fill ri-3x text-slate-700",
-    header: "Memberikan Harga Terbaik",
+    header: "Pemeriksaan Secara Berkala",
     bodyContent:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis assumenda facere veritatis atque ea reprehenderit!",
   },
   {
     iClass: "ri-star-s-fill ri-3x text-slate-700",
-    header: "Memberikan Harga Terbaik",
+    header: "Fokus pada Website, Mobile & IOT",
     bodyContent:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis assumenda facere veritatis atque ea reprehenderit!",
   },

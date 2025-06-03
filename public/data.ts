@@ -5,7 +5,7 @@ import Proyek3 from "@/public/assets/proyek3.webp";
 import Proyek4 from "@/public/assets/proyek4.webp";
 import Proyek5 from "@/public/assets/proyek5.webp";
 
-const Image = {
+const DataImage = {
   Hero,
   Proyek1,
   Proyek2,
@@ -14,4 +14,4 @@ const Image = {
   Proyek5,
 };
 
-export default Image;
+export default DataImage;

@@ -2,6 +2,7 @@ import Image from "next/image";
 import DataImage from "@/public/data";
 import HeroInfo from "@/components/HeroInfo/HeroInfo";
 import ServiceSection from "@/components/ServiceSection/ServiceSection";
+import ProjectSection from "@/components/Project/ProjectSection";
 
 export default function Home() {
   return (
@@ -26,6 +27,19 @@ export default function Home() {
         <ServiceSection />
       </div>
       {/* End Layanan */}
+
+      {/* Proyek */}
+      <div className="mt-32">
+        <h1 className="text-4xl/normal text-center font-semibold">
+          Proyek Kami
+        </h1>
+        <p className="text-base/loose text-center">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, non?
+        </p>
+
+        <ProjectSection />
+      </div>
+      {/* End Proyek */}
     </>
   );
 }
