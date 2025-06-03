@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import "./globals.css";
 import "remixicon/fonts/remixicon.css";
 import Footer from "@/components/Footer/Footer";
+import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
 
 const fontPoppins = Poppins({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${fontPoppins.className} antialiased`} id="beranda">
+        <ScrollToTop />
         <Navbar />
         <div className="container mx-auto px-4">{children}</div>
         <Footer />
