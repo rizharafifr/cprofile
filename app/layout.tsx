@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar/Navbar";
 
 import "./globals.css";
 import "remixicon/fonts/remixicon.css";
+import Footer from "@/components/Footer/Footer";
 
 const fontPoppins = Poppins({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={`${fontPoppins.className} antialiased`}>
         <Navbar />
         <div className="container mx-auto px-4">{children}</div>
+        <Footer />
       </body>
     </html>
   );

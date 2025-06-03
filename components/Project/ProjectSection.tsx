@@ -5,7 +5,7 @@ import { PROJECT_ITEMS } from "./Project.constant";
 
 const ProjectSection = () => {
   return (
-    <div className="mt-20 grid grid-cols-3 gap-10">
+    <div className="mt-20 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
       {PROJECT_ITEMS.map((item, index) => (
         <div className="shadow-2xl p-4 rounded-2xl" key={index}>
           <Image

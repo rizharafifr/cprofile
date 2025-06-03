@@ -3,6 +3,7 @@ import DataImage from "@/public/data";
 import HeroInfo from "@/components/HeroInfo/HeroInfo";
 import ServiceSection from "@/components/ServiceSection/ServiceSection";
 import ProjectSection from "@/components/Project/ProjectSection";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -40,6 +41,31 @@ export default function Home() {
         <ProjectSection />
       </div>
       {/* End Proyek */}
+
+      {/* Contact */}
+      <div className="mt-32 flex md:flex-row flex-col items-center justify-between md:gap-0 gap-4">
+        <h2 className="text-3xl font-bold">Ngoding.</h2>
+        <div className="flex gap-10">
+          <Link href={"#"}>Beranda</Link>
+          <Link href={"#"}>Layanan</Link>
+          <Link href={"#"}>Proyek</Link>
+        </div>
+        <div className="flex gap-4">
+          <Link href={"#"}>
+            <i className="ri-youtube-fill ri-2x"></i>
+          </Link>
+          <Link href={"#"}>
+            <i className="ri-instagram-fill ri-2x"></i>
+          </Link>
+          <Link href={"#"}>
+            <i className="ri-reddit-fill ri-2x"></i>
+          </Link>
+          <Link href={"#"}>
+            <i className="ri-twitter-fill ri-2x"></i>
+          </Link>
+        </div>
+      </div>
+      {/* End Contact */}
     </>
   );
 }
