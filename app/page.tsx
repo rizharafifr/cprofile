@@ -1,6 +1,7 @@
 import Image from "next/image";
 import DataImage from "@/public/data";
 import HeroInfo from "@/components/HeroInfo/HeroInfo";
+import ServiceSection from "@/components/ServiceSection/ServiceSection";
 
 export default function Home() {
   return (
@@ -19,6 +20,12 @@ export default function Home() {
         <HeroInfo />
       </div>
       {/* End Hero Image */}
+
+      {/* Layanan */}
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-32 gap-10">
+        <ServiceSection />
+      </div>
+      {/* End Layanan */}
     </>
   );
 }
